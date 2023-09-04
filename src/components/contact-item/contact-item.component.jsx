@@ -4,15 +4,11 @@ import "./contact-item.styles.scss";
 import { Fragment } from "react";
 
 const ContactItem = ({ contact }) => {
-  const { linkClassName, linkTo, fontAwesomeIconClass, contactText } = contact;
-  if(linkTo){
+  const { linkTo, fontAwesomeIconClass, contactText } = contact;
+  if (linkTo) {
     return (
       <div className="contact-item">
-        <Link
-          className={`contact-item-wrapper ${linkClassName}`}
-          to={linkTo}
-          target="_blank"
-        >
+        <Link className="contact-item-wrapper" to={linkTo} target="_blank">
           <div className="contact-item-outer">
             <FontAwesomeIcon icon={fontAwesomeIconClass} />
           </div>
@@ -20,13 +16,10 @@ const ContactItem = ({ contact }) => {
         </Link>
       </div>
     );
-  }
-  else{
+  } else {
     return (
       <div className="contact-item">
-        <div
-          className={`contact-item-wrapper ${linkClassName}`}
-        >
+        <div className="contact-item-wrapper">
           <div className="contact-item-outer">
             <FontAwesomeIcon icon={fontAwesomeIconClass} />
           </div>
