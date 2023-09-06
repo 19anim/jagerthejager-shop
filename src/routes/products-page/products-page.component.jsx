@@ -1,7 +1,7 @@
-import "./products-page.styles.scss";
+import ProductCategories from "../../components/product-categories/product-categories.component";
 
 const ProductPage = () => {
-  return <h1>Product Page</h1>;
+  return <ProductCategories/>
 };
 
 export default ProductPage;

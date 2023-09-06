@@ -4,26 +4,26 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister original Việt Nam",
-        detail: [
+        details: [
           {
-            vol: "20ml",
+            volume: "20ml",
             quantity: 100,
             price: "60.000VNĐ",
           },
           {
-            vol: "200ml",
+            volume: "200ml",
             quantity: 100,
             price: "280.000VNĐ",
           },
           {
-            vol: "700ml",
+            volume: "700ml",
             quantity: 100,
             price: "430.000VNĐ",
           },
           {
-            vol: "1000ml",
+            volume: "1000ml",
             quantity: 100,
             price: "530.000VNĐ",
           },
@@ -31,21 +31,21 @@ const SHOP_DATA = [
       },
       {
         id: 2,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister original xách tay Đức",
-        detail: [
+        details: [
           {
-            vol: "100ml",
+            volume: "100ml",
             quantity: 100,
             price: "400.000VNĐ",
           },
           {
-            vol: "700ml",
+            volume: "700ml",
             quantity: 10,
             price: "1.300.000VNĐ",
           },
           {
-            vol: "100ml",
+            volume: "1000ml",
             quantity: 0,
             price: "1.900.000VNĐ",
           },
@@ -59,16 +59,16 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister Coldbrew",
-        detail: [
+        details: [
           {
-            vol: "20ml",
+            volume: "20ml",
             quantity: 100,
             price: "180.000VNĐ",
           },
           {
-            vol: "1000ml",
+            volume: "1000ml",
             quantity: 1,
             price: "2.500.000VNĐ",
           },
@@ -76,11 +76,11 @@ const SHOP_DATA = [
       },
       {
         id: 2,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister Spice",
-        detail: [
+        details: [
           {
-            vol: "700ml",
+            volume: "700ml",
             quantity: 2,
             price: "2.500.000VNĐ",
           },
@@ -88,11 +88,11 @@ const SHOP_DATA = [
       },
       {
         id: 3,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister Scharf",
-        detail: [
+        details: [
           {
-            vol: "700ml",
+            volume: "700ml",
             quantity: 8,
             price: "1.900.000VNĐ",
           },
@@ -100,16 +100,16 @@ const SHOP_DATA = [
       },
       {
         id: 4,
-        imageUrl: "",
+        imageUrl: "https://cdn.musebycl.io/2020-06/Jagermeister-original.jpg",
         name: "Jagermeister Manifest",
-        detail: [
+        details: [
           {
-            vol: "40ml",
+            volume: "40ml",
             quantity: 8,
             price: "450.000VNĐ",
           },
           {
-            vol: "1000ml",
+            volume: "1000ml",
             quantity: 2,
             price: "3.000.000VNĐ",
           },
