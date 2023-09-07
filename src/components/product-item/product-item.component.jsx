@@ -2,28 +2,32 @@ import { useState } from "react";
 import "./product-item.styles.scss";
 
 const ProductItem = ({ item }) => {
-  const { imageUrl, name, details } = item;
+  const { DefaultImageUrl, name, details } = item;
   const [priceToDisplay, setPriceToDisplay] = useState("");
+  const [imageLink, setImageLink] = useState("");
   const handleVolumeButtonOnClick = (evt) => {
-    const combinationPriceAndVolume = evt.target.value + " / " + evt.target.innerHTML;
+    const index = evt.target.value;
+    const combinationPriceAndVolume = details[index].price + " / " + evt.target.innerHTML;
     setPriceToDisplay(combinationPriceAndVolume);
+    setImageLink(details[index].imageUrl);
+    console.log("Done");
   };
   return (
     <div className="product-item">
       <div className="product-item-media">
         <p className="product-item-title common-title">{name.toUpperCase()}</p>
-        <img src={imageUrl} alt="" />
+        {imageLink ? <img src={imageLink} alt={name.toUpperCase()} /> : <img src={DefaultImageUrl} alt={name.toUpperCase()} />}
       </div>
       <div className="product-item-information">
         <div className="product-item-vol">
           <p className="product-item-vol--title common-title">Dung tích:</p>
-          {details.map((detail) => {
+          {details.map((detail, index) => {
             const { volume, price, quantity } = detail;
             return (
               <button key={name + volume}
                 className="product-item-vol--button"
                 onClick={handleVolumeButtonOnClick}
-                value={price}
+                value={index}
               >
                 {volume}
               </button>
