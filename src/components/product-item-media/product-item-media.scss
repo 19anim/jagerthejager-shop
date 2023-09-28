@@ -1,0 +1,13 @@
+.product-item-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    border-radius: 15px;
+  }
+}

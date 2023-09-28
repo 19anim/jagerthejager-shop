@@ -15,7 +15,7 @@ const Navigation = () => {
           <span className="shop-title">JAGERTHEJAGER SHOP</span>
         </div>
         <div className="nav-links-container">
-          <Link>About</Link>
+          <Link to="/test">About</Link>
           <Link to="/products">Products</Link>
           <Link>Cart Icon</Link>
           <Link>Recipe</Link>

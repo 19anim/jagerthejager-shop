@@ -1,0 +1,46 @@
+.product-item-information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .product-item-information-summary {
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-item-information--splitter {
+      white-space: break-spaces;
+    }
+  }
+
+  .product-item-price {
+    display: flex;
+    flex-direction: row;
+
+    .product-item-price--title {
+      margin-right: 10px;
+    }
+  }
+
+  .product-item-add-to-cart {
+    .product-quantity {
+      background-color: #fff1cb;
+      text-align: center;
+      cursor: pointer;
+      width: 10%;
+      font-size: 20px;
+      font-family: "Podkova";
+      margin-right: 20px;
+    }
+  }
+
+  .product-item-add-to-cart--button,
+  .product-item-detail--button {
+    border: none;
+    border-radius: 15px;
+    background-color: #edd286;
+    font-family: "Podkova";
+    font-size: 20px;
+    width: 40%;
+    cursor: pointer;
+  }
+}
